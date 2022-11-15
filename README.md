@@ -1,4 +1,4 @@
-# DuDuLab-
+# DuDuLab 抢购
 
 使用方法
 
