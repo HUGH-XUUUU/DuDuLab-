@@ -1,7 +1,7 @@
 const { ethers} = require("ethers");
 
-const ALCHEMY_GOERLI_URL = '';  //输入你的rpc节点
-const provider = new ethers.providers.JsonRpcProvider(ALCHEMY_GOERLI_URL);
+const ALCHEMY_URL = '';  //输入你的rpc节点
+const provider = new ethers.providers.JsonRpcProvider(ALCHEMY_URL);
 
 const privateKey = ''   //输入你的私钥
 const wallet = new ethers.Wallet(privateKey, provider)
@@ -9,7 +9,7 @@ const wallet = new ethers.Wallet(privateKey, provider)
 const abiDuDu = [
     "function publicMint(uint256) public payable",
 ];
-const addressDuDu = '0x5799104Ae5B5beBE88fc42b2aa51E9ab8d43F75f'
+const addressDuDu = '0x365D87a8d31c656ED1479C0F54F19E3BE9F19537'
 const contractDuDu = new ethers.Contract(addressDuDu, abiDuDu, wallet)
 
 
